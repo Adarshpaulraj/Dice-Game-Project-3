@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="continer ">
+      <div class="top ">
+        <h6 class="title" style="color: rgb(145, 232, 14);">Let's Play Dice</h5>
+          <!-- <h4>Player-1 to play</h4> -->
+        <div  id="player">Click RollNow to play</div>
+      </div>
+      <div class="d-flex  align-items-center " id="section">
+        <div class="player1 m-0">
+            <div class="fw-bold">Player-1</div>
+            <div><p id="player1">0</p></div>
+             <button class="btn btn-success" id="btn1" onclick="roll1()">Roll Now</button>
+        </div>
+        <div class="d-grid">
+            <img src="images/1.png" class=" img1">
+            <button class="btn btn-danger reset" id="btn3" onclick="reset()">RESET</button>
+        </div>
+        <div class="m-0  player2">
+            <div class="fw-bold">Player-2</div>
+            <div ><p id="player2">0</p></div>
+            <button class="btn btn-success" id="btn2" onclick="roll2()"> Roll Now</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     <script src="./script.js"></script>
+  </body>
+</html>
